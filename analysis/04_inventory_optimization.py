@@ -31,8 +31,8 @@ DB_CONFIG = {
     "host": "localhost",
     "port": "5432",
     "database": "stocksense_ai",
-    "user": "postgres",
-    "password": "yash7046"
+    "user": "aiubvaibbibvv",
+    "password": "Enter your DB password"
 }
 
 
