@@ -24,8 +24,8 @@ print("=" * 70)
 DB_HOST = "localhost"
 DB_PORT = "5432"
 DB_NAME = "stocksense_ai"
-DB_USER = "postgres"
-DB_PASSWORD = "yash7046"
+DB_USER = "aiubvaibbibvv"
+DB_PASSWORD = "Enter your DB password"
 
 
 # Output directory
