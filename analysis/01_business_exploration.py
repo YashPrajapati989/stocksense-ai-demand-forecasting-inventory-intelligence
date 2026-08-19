@@ -17,8 +17,8 @@ pd.set_option("display.float_format", lambda x: f"{x:,.2f}")
 DB_HOST = "localhost"
 DB_PORT = "5432"
 DB_NAME = "stocksense_ai"
-DB_USER = "postgres"
-DB_PASSWORD = "yash7046"
+DB_USER = "aiubvaibbibvv"
+DB_PASSWORD = "Enter your DB password"
 
 connection_string = (
     f"postgresql+psycopg2://"
