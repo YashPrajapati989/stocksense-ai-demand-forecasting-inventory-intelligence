@@ -1,0 +1,5 @@
+priority,recommendation,business_reason
+P1 - URGENT,Immediately replenish critical inventory items.,"9,109 inventory records are currently at critical stock levels."
+P2 - HIGH,Prioritise purchase orders for high-risk inventory.,"1,344 inventory records are below the recommended reorder threshold."
+P2 - HIGH,"Review excess inventory for redistribution, promotions or purchasing reductions.","7,043 inventory records have more than 90 days of estimated inventory coverage."
+P1 - URGENT,Prioritise high-value inventory at risk.,"Total inventory value exposed to stockout risk is 38,141.50."
