@@ -128,10 +128,11 @@ StockSenseAI/
 ├── models/
 │   ├── best_demand_forecasting_model_timeseries.pkl
 │   └── model_features_timeseries.pkl
-├── notebooks/
 │
+├── notebooks/
 │   ├── 01_data_profiling.ipynb
 │   └── 02_data_quality_assessment.ipynb
+│
 ├── results/
 │   ├── inventory_optimization_recommendations.csv
 │   └── All results CSVs
