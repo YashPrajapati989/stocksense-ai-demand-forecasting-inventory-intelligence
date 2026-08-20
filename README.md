@@ -159,6 +159,7 @@ StockSenseAI/
 │       ├── 2_Inventory_Optimization.py
 │       ├── 3_Risk_Action_Center.py
 │       └── 4_Insights_Recommendations.py
+│
 ├── LICENSE
 └── README.MD
 
