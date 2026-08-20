@@ -281,7 +281,7 @@ The Streamlit application provides an interactive decision-support interface.
 
 Explore predicted demand patterns and forecasting intelligence.
 
-![Demand Forecast](docs/screenshots/01_demand_forecast.png)
+![Demand Forecast](screenshots/01_demand_forecast.png)
 
 ---
 
@@ -289,7 +289,7 @@ Explore predicted demand patterns and forecasting intelligence.
 
 Analyze safety stock, reorder points, inventory gaps, and days of inventory.
 
-![Inventory Optimization](docs/screenshots/02_inventory_optimization.png)
+![Inventory Optimization](screenshots/02_inventory_optimization.png)
 
 ---
 
@@ -297,7 +297,7 @@ Analyze safety stock, reorder points, inventory gaps, and days of inventory.
 
 Identify critical inventory positions and prioritize actions based on risk and financial exposure.
 
-![Risk Action Center](docs/screenshots/03_risk_action_center.png)
+![Risk Action Center](screenshots/03_risk_action_center.png)
 
 ---
 
@@ -305,7 +305,7 @@ Identify critical inventory positions and prioritize actions based on risk and f
 
 Transform analytical outputs into executive-level business recommendations.
 
-![Insights Recommendations](docs/screenshots/04_insights_recommendations.png)
+![Insights Recommendations](screenshots/04_insights_recommendations.png)
 
 ---
 
