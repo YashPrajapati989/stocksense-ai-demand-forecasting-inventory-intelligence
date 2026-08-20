@@ -1,147 +1,340 @@
-# StockSenseAI — Inventory Decision Support Platform
+# StockSenseAI — AI-Powered Demand Forecasting & Inventory Intelligence
 
-An end-to-end AI-driven decision-support platform designed to help retail and supply chain teams forecast demand, optimize safety stock and reorder points, classify inventory risks, and generate actionable business recommendations.
+> **From raw retail data to demand forecasts, inventory optimization, and actionable business decisions.**
 
----
+<p align="center">
 
-## Overview
+[![Live App](https://img.shields.io/badge/🚀_Live_App-Streamlit-FF4B4B?style=for-the-badge\&logo=streamlit\&logoColor=white)](https://stocksense-ai-demand-forecasting-inventory-intelligence-urlth3.streamlit.app/)
+[![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge\&logo=python\&logoColor=white)](https://www.python.org/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-4169E1?style=for-the-badge\&logo=postgresql\&logoColor=white)](https://www.postgresql.org/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-Deployed-FF4B4B?style=for-the-badge\&logo=streamlit\&logoColor=white)](https://streamlit.io/)
+[![scikit-learn](https://img.shields.io/badge/scikit--learn-Machine_Learning-F7931E?style=for-the-badge\&logo=scikitlearn\&logoColor=white)](https://scikit-learn.org/)
+[![License](https://img.shields.io/badge/License-MIT-success?style=for-the-badge)](LICENSE)
 
-StockSenseAI bridges the gap between machine learning demand forecasts and executive supply chain decision-making. By converting 7-day probabilistic demand predictions into item-level inventory buffers, safety stock thresholds, and risk-weighted reorder recommendations, StockSenseAI ensures supply chain managers maintain high customer service levels while minimizing excess capital exposure.
+</p>
 
----
-
-## Business Problem
-
-Retail operations face two primary inventory management risks:
-1. **Stockout Risks:** Under-stocking leads to lost revenue, unfulfilled customer demand, and damaged brand trust.
-2. **Excess Capital Exposure:** Over-stocking ties up cash flow in working capital, increases holding/depreciation costs, and limits operational agility.
-3. **Prioritization Paralysis:** Planning across thousands of SKUs across multiple retail locations makes manual monitoring and order prioritization inefficient.
-
----
-
-## Solution
-
-StockSenseAI implements an enterprise decision pipeline that transforms raw time-series sales records into prioritized business recommendations. The system evaluates current inventory levels against dynamic reorder thresholds, identifies critical stockout risks, quantifies financial value at risk, and prescribes exact reorder quantities for store and supply chain managers.
+<p align="center">
+  <a href="https://stocksense-ai-demand-forecasting-inventory-intelligence-urlth3.streamlit.app/"><strong>🚀 Launch Live Application</strong></a>
+  &nbsp; • &nbsp;
+  <a href="#-project-overview"><strong>Explore Project</strong></a>
+  &nbsp; • &nbsp;
+  <a href="#-technology-stack"><strong>Technology Stack</strong></a>
+</p>
 
 ---
 
-## Business Flow
+## 🚀 Live Application
 
+### 👉 [Launch StockSenseAI](https://stocksense-ai-demand-forecasting-inventory-intelligence-urlth3.streamlit.app/)
+
+**StockSenseAI is an end-to-end AI-powered inventory decision-support platform designed to transform retail sales and inventory data into actionable supply chain intelligence.**
+
+The platform combines:
+
+* 📈 Demand forecasting
+* 📦 Inventory optimization
+* ⚠️ Stockout and excess-stock risk detection
+* 🎯 Dynamic reorder recommendations
+* 💰 Financial risk prioritization
+* 💡 Executive-level business insights
+
+---
+
+# 🎯 Project Overview
+
+Retail and supply chain teams often face a difficult balancing act:
+
+> **Too little inventory → Stockouts, lost revenue, dissatisfied customers.**
+> **Too much inventory → Excess working capital, storage costs, and inefficient operations.**
+
+StockSenseAI bridges this gap by transforming historical retail data into a complete decision pipeline:
+
+```text
+                    ┌─────────────────────┐
+                    │   Retail Raw Data   │
+                    └──────────┬──────────┘
+                               │
+                               ▼
+                    ┌─────────────────────┐
+                    │ PostgreSQL + SQL    │
+                    │ Data Engineering    │
+                    └──────────┬──────────┘
+                               │
+                               ▼
+                    ┌─────────────────────┐
+                    │ Feature Engineering │
+                    │ Time-Series Signals │
+                    └──────────┬──────────┘
+                               │
+                               ▼
+                    ┌─────────────────────┐
+                    │  ML Demand Forecast │
+                    │   7-Day Horizon     │
+                    └──────────┬──────────┘
+                               │
+                               ▼
+                    ┌─────────────────────┐
+                    │ Inventory Optimizer │
+                    │ SS • ROP • DOI      │
+                    └──────────┬──────────┘
+                               │
+                               ▼
+                    ┌─────────────────────┐
+                    │ Risk Classification │
+                    │ Critical → Healthy  │
+                    └──────────┬──────────┘
+                               │
+                               ▼
+                    ┌─────────────────────┐
+                    │ Business Decisions  │
+                    │ Reorder • Monitor   │
+                    └─────────────────────┘
 ```
-Data
-  ↓
-Demand Forecasting
-  ↓
-Inventory Optimization
-  ↓
-Inventory Risk Identification
-  ↓
-Business Insights & Recommendations
+
+---
+
+# 💼 Business Problem
+
+Managing inventory across thousands of products and multiple store locations creates three major challenges.
+
+### 🔴 Stockout Risk
+
+Insufficient inventory can lead to:
+
+* Lost sales
+* Unfulfilled customer demand
+* Reduced customer satisfaction
+* Potential brand damage
+
+### 🟠 Excess Inventory
+
+Overstocking can result in:
+
+* Capital locked in inventory
+* Higher storage costs
+* Product depreciation or obsolescence
+* Reduced operational flexibility
+
+### 🟡 Prioritization Complexity
+
+When thousands of Store × Product combinations must be monitored simultaneously, manual spreadsheet analysis becomes inefficient and difficult to scale.
+
+---
+
+# 💡 The StockSenseAI Solution
+
+StockSenseAI converts machine learning forecasts into **inventory actions**.
+
+Instead of simply answering:
+
+> *“What will demand look like?”*
+
+The platform helps answer:
+
+> **What should we order? Which items are at risk? How much inventory is required? Where should managers focus first?**
+
+The workflow is:
+
+```text
+Historical Sales
+       ↓
+Time-Series Feature Engineering
+       ↓
+Machine Learning Forecast
+       ↓
+7-Day Demand Prediction
+       ↓
+Safety Stock Calculation
+       ↓
+Dynamic Reorder Point
+       ↓
+Inventory Risk Classification
+       ↓
+Recommended Reorder Quantity
+       ↓
+Executive Business Recommendations
 ```
 
 ---
 
-## Key Features
+# ✨ Key Features
 
-### 📈 1. Demand Forecasting
-- Generates 7-day horizon demand forecasts at the native **Store × Product** grain.
-- Evaluates historical daily sales averages, rolling 30-day demand, and demand volatility ($CV_{30}$).
-- Establishes daily baseline estimates ($d_{daily} = \text{Forecast}_{7D} / 7$).
+## 📈 1. Demand Forecast Intelligence
 
-### 📦 2. Inventory Optimization
-- Calculates mathematically rigorous inventory buffers:
-  - **Lead-Time Demand ($LTD$):** Expected demand during supplier lead time ($7 \text{ days}$).
-  - **Safety Stock ($SS$):** Service-level buffered safety stock ($Z = 1.65$ for 95% service level, $\sigma_{30} \cdot \sqrt{L}$).
-  - **Reorder Point ($ROP$):** Dynamic replenishment trigger ($ROP = LTD + SS$).
-  - **Days of Inventory ($DOI$):** Inventory coverage horizon ($\text{Qty} / d_{daily}$).
+Generates **7-day demand forecasts** at the native:
 
-### ⚠️ 3. Risk & Action Center
-- Classifies each SKU into five authoritative risk categories:
-  - `CRITICAL`: Out of stock ($\text{Qty} \le 0$).
-  - `HIGH RISK`: At or below reorder point ($\text{Qty} \le ROP$) or low coverage ($DOI < 7 \text{ days}$).
-  - `MONITOR`: Low inventory buffer ($7 \le DOI < 21 \text{ days}$).
-  - `HEALTHY`: Optimal stock coverage.
-  - `EXCESS STOCK`: Over-stocked coverage ($DOI > 90 \text{ days}$).
+> **Store × Product**
 
-### 💡 4. Insights & Recommendations
-- Converts production optimization metrics into executive decision intelligence:
-  - **Executive KPI Summary:** Portfolio inventory value, value at risk, critical/high-risk item counts, total reorder quantity.
-  - **Portfolio Risk Distribution:** Interactive Plotly donut visualization of inventory health.
-  - **Priority Action Register:** Filterable, ranked register prioritised by risk rank and value at risk.
-  - **Store & Product Attention Registers:** Aggregated financial and stockout risk metrics by retail location and SKU.
-  - **Executive Management Summary:** Automated narrative bullet summary calculated directly from loaded data.
+planning level.
 
----
+The forecasting workflow incorporates:
 
-## Risk Classification Rules
+* Historical demand patterns
+* Lag features
+* Rolling demand averages
+* Demand volatility
+* Calendar features
+* Product demand characteristics
+* Store-level signals
 
-The platform strictly enforces the five production risk tiers established in `analysis/04_inventory_optimization.py`:
+### Core Demand Metrics
 
-| Risk Tier | Condition | Business Implication | Recommended Action |
-|---|---|---|---|
-| **`CRITICAL`** | $\text{Qty on Hand} \le 0$ | Depleted stock; active stockout | Immediate replenishment required |
-| **`HIGH RISK`** | $\text{Qty} \le ROP$ or $DOI < 7$ | At or below dynamic reorder point | Reorder stock & prioritize supplier shipment |
-| **`MONITOR`** | $7 \le DOI < 21$ | Buffer low; approaching reorder threshold | Monitor demand & inventory position closely |
-| **`EXCESS STOCK`** | $DOI > 90$ | Substantial over-stocking | Review purchasing & consider stock redistribution |
-| **`HEALTHY`** | Otherwise | Optimal stock coverage | No immediate action required |
+| Metric                | Description                           |
+| --------------------- | ------------------------------------- |
+| **7-Day Forecast**    | Predicted demand over the next 7 days |
+| **Daily Demand**      | Average expected daily demand         |
+| **Rolling Demand**    | Recent demand trend                   |
+| **Demand Volatility** | Historical variability in demand      |
 
 ---
 
-## Key Metrics
+## 📦 2. Inventory Optimization Engine
 
-- **Forecast Demand (7D):** Predicted total sales volume over the upcoming 7 days.
-- **Forecast Daily Demand:** Average expected daily sales ($d_{daily} = \text{Forecast}_{7D} / 7$).
-- **Lead-Time Demand ($LTD$):** Expected sales during supplier delivery window ($7 \text{ days}$).
-- **Safety Stock ($SS$):** Buffer stock protecting against demand volatility ($Z \cdot \sigma_{30} \cdot \sqrt{7}$).
-- **Reorder Point ($ROP$):** Dynamic replenishment trigger ($LTD + SS$).
-- **Days of Inventory ($DOI$):** Inventory coverage in days ($\text{Qty} / d_{daily}$ when $d_{daily} > 0$, else `N/A`).
-- **Inventory Gap:** Buffer deficit or surplus ($\text{Qty} - ROP$).
-- **Recommended Reorder Qty:** Exact units required to reach reorder point ($\lceil ROP - \text{Qty} \rceil$ for `CRITICAL` / `HIGH RISK`, else $0$).
-- **Inventory Value at Risk:** Financial exposure of items in `CRITICAL` or `HIGH RISK` state.
+The platform translates demand predictions into operational inventory thresholds.
 
----
+### Lead-Time Demand
 
-## Dataset & Grain
+Expected demand during supplier lead time:
 
-- **Total Records:** 60,968 inventory records.
-- **Native Planning Grain:** **Store × Product** (`store_key` × `product_key`).
-- **Data Integrity:** 0 duplicate Store × Product combinations. Production data is loaded read-only from `results/inventory_optimization_recommendations.csv`.
-
----
-
-## Project Architecture
-
+```text
+LTD = Daily Demand × Lead Time
 ```
+
+### Safety Stock
+
+A demand volatility buffer designed to protect service levels:
+
+```text
+SS = Z × σ × √Lead Time
+```
+
+Where:
+
+* `Z = 1.65`
+* Target service level ≈ **95%**
+* `σ` = demand volatility
+
+### Reorder Point
+
+```text
+ROP = Lead-Time Demand + Safety Stock
+```
+
+### Days of Inventory
+
+```text
+DOI = Inventory Quantity / Daily Demand
+```
+
+---
+
+# ⚠️ Inventory Risk Classification
+
+Each Store × Product inventory position is automatically classified into one of five business risk categories.
+
+| Risk Tier           | Condition            | Business Meaning                     | Recommended Action                      |
+| ------------------- | -------------------- | ------------------------------------ | --------------------------------------- |
+| 🔴 **CRITICAL**     | Qty ≤ 0              | Active stockout                      | Immediate replenishment                 |
+| 🟠 **HIGH RISK**    | Qty ≤ ROP or DOI < 7 | Inventory approaching critical level | Prioritize reorder                      |
+| 🟡 **MONITOR**      | 7 ≤ DOI < 21         | Low inventory buffer                 | Monitor closely                         |
+| 🟢 **HEALTHY**      | Normal coverage      | Balanced inventory                   | No immediate action                     |
+| 🔵 **EXCESS STOCK** | DOI > 90             | Significant overstock                | Review purchasing or redistribute stock |
+
+---
+
+# 📊 Business Impact
+
+StockSenseAI analyzes:
+
+## **60,968 Store × Product inventory records**
+
+and transforms them into prioritized supply chain decisions.
+
+| Business Metric                 |          Result |
+| ------------------------------- | --------------: |
+| 📦 Total Inventory Records      |      **60,968** |
+| 🔴 Critical Items               |       **9,109** |
+| 🟠 High-Risk Items              |       **1,344** |
+| 🔵 Excess Stock Items           |       **7,043** |
+| 💰 Inventory Value at Risk      |  **$38,141.50** |
+| 🔄 Recommended Reorder Quantity | **7,175 units** |
+| 🧪 Validation Tests Passed      |     **20 / 20** |
+
+### Why this matters
+
+Instead of manually reviewing **60,000+ inventory positions**, decision-makers can immediately focus on:
+
+* Critical stockouts
+* High-priority replenishment
+* Financial value at risk
+* Excess inventory exposure
+* Store-level risk
+* Product-level actions
+
+---
+
+# 🖥️ Application Dashboard
+
+The Streamlit application provides an interactive decision-support interface.
+
+## 📈 Demand Forecast
+
+Explore predicted demand patterns and forecasting intelligence.
+
+![Demand Forecast](docs/screenshots/01_demand_forecast.png)
+
+---
+
+## 📦 Inventory Optimization
+
+Analyze safety stock, reorder points, inventory gaps, and days of inventory.
+
+![Inventory Optimization](docs/screenshots/02_inventory_optimization.png)
+
+---
+
+## ⚠️ Risk & Action Center
+
+Identify critical inventory positions and prioritize actions based on risk and financial exposure.
+
+![Risk Action Center](docs/screenshots/03_risk_action_center.png)
+
+---
+
+## 💡 Insights & Recommendations
+
+Transform analytical outputs into executive-level business recommendations.
+
+![Insights Recommendations](docs/screenshots/04_insights_recommendations.png)
+
+---
+
+# 🏗️ Project Architecture
+
+```text
 StockSenseAI/
+│
 ├── analysis/
 │   ├── 01_business_exploration.py
-│   ├── 02_feature_engineering.py
 │   ├── 02b_feature_engineering_timeseries.py
-│   ├── 03_demand_forecasting_model.py
 │   ├── 03b_demand_forecasting_model.py
 │   ├── 04_inventory_optimization.py
 │   └── 05_business_recommendations.py
 │
 ├── data/
-│   └── stocksense_ml_features.csv
+│   └── processed/
 │
 ├── models/
 │   ├── best_demand_forecasting_model_timeseries.pkl
 │   └── model_features_timeseries.pkl
 │
 ├── notebooks/
-│   ├── 01_data_profiling.ipynb
-│   └── 02_data_quality_assessment.ipynb
 │
 ├── results/
-│   ├── inventory_optimization_recommendations.csv
-│   └── All results CSVs
+│   └── inventory_optimization_recommendations.csv
 │
-├── screenshots/
-│   ├── 01_demand_forecast.png
-│   ├── 02_inventory_optimization.png
-│   ├── 03_risk_action_center.png
-│   └── 04_insights_recommendations.png
+├── docs/
+│   └── screenshots/
 │
 ├── sql/
 │   ├── 01_create_staging_tables.sql
@@ -154,109 +347,252 @@ StockSenseAI/
 │
 ├── streamlit/
 │   ├── app.py
-│   ├── requirements.txt
-│   └── pages/
-│       ├── 1_Demand_Forecast.py
-│       ├── 2_Inventory_Optimization.py
-│       ├── 3_Risk_Action_Center.py
-│       └── 4_Insights_Recommendations.py
+│   ├── pages/
+│   ├── utils/
+│   └── assets/
 │
+├── requirements.txt
 ├── LICENSE
-└── README.MD
-
+└── README.md
 ```
 
 ---
 
-## Technology Stack
+# 🧠 Machine Learning Workflow
 
-- **Core Language:** Python 3.10+
-- **Data Manipulation & Analytics:** Pandas, NumPy
-- **Machine Learning & Time-Series:** scikit-learn, SQLAlchemy
-- **User Interface:** Streamlit (Wide Layout, Dark Theme)
-- **Data Visualization:** Plotly Graph Objects / Express
+```text
+Raw Retail Data
+      ↓
+Data Cleaning & Validation
+      ↓
+PostgreSQL Data Modeling
+      ↓
+SQL Analytics Views
+      ↓
+Time-Series Expansion
+      ↓
+Feature Engineering
+      ↓
+Train / Validation / Test Split
+      ↓
+Model Training & Evaluation
+      ↓
+Demand Forecast Generation
+      ↓
+Inventory Optimization
+      ↓
+Business Recommendation Engine
+      ↓
+Streamlit Decision Platform
+```
 
 ---
 
-## Validation & Quality Assurance
+# 🛠️ Technology Stack
 
-The application underwent rigorous automated validation via a 20-test verification suite:
+| Category                   | Technologies              |
+| -------------------------- | ------------------------- |
+| 🐍 Programming             | Python                    |
+| 🗄️ Database               | PostgreSQL                |
+| 📊 Data Analysis           | Pandas, NumPy             |
+| 🧠 Machine Learning        | scikit-learn              |
+| 🕒 Time-Series Engineering | Lag & Rolling Features    |
+| 🔗 Database Integration    | SQLAlchemy                |
+| 📈 Visualization           | Plotly                    |
+| 🖥️ Application            | Streamlit                 |
+| ☁️ Deployment              | Streamlit Community Cloud |
+| 🔧 Version Control         | Git & GitHub              |
 
-```
+---
+
+# 🧪 Validation & Quality Assurance
+
+The production application passed:
+
+## 🟢 **20 / 20 Automated Validation Tests**
+
+Validation includes:
+
+* Production dataset loading
+* Required column verification
+* Store × Product grain uniqueness
+* Risk category validation
+* Critical inventory reconciliation
+* High-risk inventory reconciliation
+* Excess stock reconciliation
+* Financial value-at-risk validation
+* Recommended reorder quantity validation
+* Non-negative reorder verification
+* Inventory metric validation
+* Application navigation checks
+* Insights page availability
+* Production CSV integrity
+* Python compilation checks
+
+```text
 ============================================================
 FINAL RESULT: 20 PASSED, 0 FAILED
 ============================================================
-  [OK] TEST 1: Production CSV loads successfully
-  [OK] TEST 2: Required production columns exist
-  [OK] TEST 3: Store x Product grain remains unique (60,968 records)
-  [OK] TEST 4: Risk categories are valid (5 tiers)
-  [OK] TEST 5: Critical count matches production CSV (9,109 items)
-  [OK] TEST 6: High Risk count matches production CSV (1,344 items)
-  [OK] TEST 7: Excess Stock count matches production CSV (7,043 items)
-  [OK] TEST 8: Inventory Value at Risk total matches production CSV ($38,141.50)
-  [OK] TEST 9: Recommended Reorder Quantity total matches production CSV (7,175 units)
-  [OK] TEST 10: Recommended reorder quantities are non-negative
-  [OK] TEST 11: Inventory value at risk column verified
-  [OK] TEST 12: NaN days_of_inventory displays as N/A
-  [OK] TEST 13: Zero What-If Simulator pages remain
-  [OK] TEST 14: Exactly one Insights & Recommendations page exists
-  [OK] TEST 15: Production CSV row count remains unchanged (60,968)
-  [OK] TEST 16: Production CSV Store x Product grain remains unchanged
-  [OK] TEST 17: No aggregate_portfolio logic remains
-  [OK] TEST 18: No raw What-If references remain in Streamlit navigation
-  [OK] TEST 19: Insights page exists and is accessible
-  [OK] TEST 20: Insights page compiles successfully (py_compile OK)
 ```
 
 ---
 
-## Screenshots
+# 🚀 Run Locally
 
-Below are preview links to the four core application pages:
+## 1️⃣ Clone the repository
 
-| Module | Preview |
-|---|---|
-| **Demand Forecast** | `docs/screenshots/01_demand_forecast.png` |
-| **Inventory Optimization** | `docs/screenshots/02_inventory_optimization.png` |
-| **Risk & Action Center** | `docs/screenshots/03_risk_action_center.png` |
-| **Insights & Recommendations** | `docs/screenshots/04_insights_recommendations.png` |
+```bash
+git clone https://github.com/YOUR_USERNAME/StockSenseAI.git
+```
+
+```bash
+cd StockSenseAI
+```
+
+## 2️⃣ Create a virtual environment
+
+```bash
+python -m venv venv
+```
+
+### Windows
+
+```bash
+venv\Scripts\activate
+```
+
+### macOS / Linux
+
+```bash
+source venv/bin/activate
+```
+
+## 3️⃣ Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+## 4️⃣ Launch the application
+
+```bash
+streamlit run streamlit/app.py
+```
+
+The application will be available locally through Streamlit.
 
 ---
 
-## How to Run the Application
+# 🌐 Deployment
 
-1. Clone or navigate to the repository directory:
-   ```bash
-   cd c:/Users/YASH/Desktop/Data_Science_Projects/StockSenseAI
-   ```
-2. Install dependencies:
-   ```bash
-   pip install -r streamlit/requirements.txt
-   ```
-3. Launch the Streamlit application:
-   ```bash
-   streamlit run streamlit/app.py
-   ```
+The application is publicly deployed using Streamlit Community Cloud.
+
+### 🚀 **[Launch StockSenseAI Live](https://stocksense-ai-demand-forecasting-inventory-intelligence-urlth3.streamlit.app/)**
 
 ---
 
-## Business Impact
+# 🎯 Skills Demonstrated
 
-- **Risk Prioritization:** Immediately isolates 9,109 critical items and 1,344 high-risk items out of 60,968 total inventory records.
-- **Capital Protection:** Prescribes replenishment order quantities targeting $38,141.50 in value at risk.
-- **Working Capital Efficiency:** Identifies 7,043 excess stock SKUs carrying >90 days of inventory to prevent over-purchasing.
-- **Operational Clarity:** Prescribes exact item-level reorder quantities without requiring manual spreadsheet analysis.
+This project demonstrates practical experience across the complete data and machine learning lifecycle.
+
+### Data Engineering
+
+* Data cleaning
+* Data validation
+* Data modeling
+* PostgreSQL
+* SQL analytics views
+
+### Data Analytics
+
+* Exploratory analysis
+* KPI development
+* Inventory analysis
+* Business intelligence
+* Risk prioritization
+
+### Machine Learning
+
+* Time-series feature engineering
+* Demand forecasting
+* Model evaluation
+* Feature selection
+* Production model serialization
+
+### Supply Chain Analytics
+
+* Safety stock optimization
+* Reorder point calculation
+* Lead-time demand
+* Days of inventory
+* Inventory risk classification
+
+### Data Applications
+
+* Streamlit
+* Interactive dashboards
+* Plotly
+* Production-style data pipelines
+* Cloud deployment
 
 ---
 
-## Limitations
+# 🔮 Future Improvements
 
-- **Fixed Lead Time:** Lead time is currently evaluated at a default supplier horizon of 7 days across SKUs.
-- **Batch Processing:** Recommendations are pre-calculated from batch model predictions on historical sales features.
+Potential next steps include:
+
+* 🔄 Variable supplier lead times
+* 🌍 Multi-location inventory transfers
+* 🏭 Supplier-level service performance modeling
+* 📦 Automated purchase order recommendations
+* 📡 Real-time data pipelines
+* ☁️ Cloud database integration
+* 🤖 Advanced forecasting models
+* 🔔 Automated inventory risk alerts
+* 📈 Forecast monitoring and drift detection
 
 ---
 
-## Future Improvements
+# ⚠️ Current Limitations
 
-- **Supplier Lead Time Volatility:** Incorporating variable lead time distributions ($LTD_{std}$) into safety stock calculations.
-- **Multi-Echelon Optimization:** Modeling inventory transfers between distribution centers and retail stores.
+* Supplier lead time is currently modeled using a fixed **7-day horizon**.
+* Recommendations are generated using batch predictions.
+* The deployed dashboard uses processed production outputs rather than a live transactional database.
+* Future versions could incorporate real-time inventory updates and dynamic supplier performance.
+
+---
+
+# 👨‍💻 Author
+
+**Yash Prajapati**
+
+Data Science | Machine Learning | Data Analytics | Business Intelligence
+
+If you found this project interesting, consider:
+
+⭐ **Starring the repository**
+🍴 **Forking the project**
+🔗 **Connecting on LinkedIn**
+🚀 **Sharing StockSenseAI with others interested in Data, AI, Retail, or Supply Chain Analytics**
+
+---
+
+<p align="center">
+
+### ⭐ If you like this project, consider giving it a star!
+
+**Built to demonstrate how data, machine learning, and business intelligence can work together to support better inventory decisions.**
+
+[![Live App](https://img.shields.io/badge/🚀_Launch_StockSenseAI-Streamlit-FF4B4B?style=for-the-badge\&logo=streamlit\&logoColor=white)](https://stocksense-ai-demand-forecasting-inventory-intelligence-urlth3.streamlit.app/)
+
+</p>
+
+## 🏷️ Topics
+
+```text
+data-science machine-learning demand-forecasting inventory-optimization
+supply-chain-analytics time-series-forecasting retail-analytics
+postgresql python streamlit plotly scikit-learn data-analytics
+business-intelligence inventory-management predictive-analytics
+end-to-end-data-science
+```
