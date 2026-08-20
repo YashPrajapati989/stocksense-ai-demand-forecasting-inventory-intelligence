@@ -121,18 +121,33 @@ StockSenseAI/
 │   ├── 03b_demand_forecasting_model.py
 │   ├── 04_inventory_optimization.py
 │   └── 05_business_recommendations.py
-├── results/
-│   └── inventory_optimization_recommendations.csv
+├── data/
+│   └── stocksense_ml_features.csv
 ├── models/
 │   ├── best_demand_forecasting_model_timeseries.pkl
 │   └── model_features_timeseries.pkl
-├── docs/
-│   ├── DEMO.md
-│   ├── PORTFOLIO.md
-│   ├── RESUME.md
-│   └── FINAL_PROJECT_SUMMARY.md
+├── notebooks/
+│   ├── 01_data_profiling.ipynb
+│   └── 02_data_quality_assessment.ipynb
+├── results/
+│   ├── inventory_optimization_recommendations.csv
+│   └── All results CSVs
+├── screenshots/
+│   ├── 01_demand_forecast.png
+│   ├── 02_inventory_optimization.png
+│   ├── 03_risk_action_center.png
+│   └── 04_insights_recommendations.png
+├── sql/
+│   ├── 01_create_staging_tables.sql
+│   ├── 02_staging_validation.sql
+│   ├── 03_create_core_tables.sql
+│   ├── 04_load_core_tables.sql
+│   ├── 05_core_data_validation.sql
+│   ├── 06_create_analytics_views.sql
+│   └── 07_analytics_validation.sql 
 └── streamlit/
     ├── app.py
+    ├── requirements.txt
     └── pages/
         ├── 1_Demand_Forecast.py
         ├── 2_Inventory_Optimization.py
